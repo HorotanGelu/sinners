@@ -34,3 +34,30 @@ body {
     backdrop-filter: blur(var(--blur));
   }
 }
+
+.element-upfront {
+  position: absolute;
+  top: 50%;
+  z-index: 101;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.get-started {
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  color: #333;
+  border: 3px solid darkblue;
+  font-size: 1.3rem;
+  font-style: normal;
+  transition: all 250ms ease-in-out;
+}
+.get-started:hover {
+  transform: scale(1.3);
+}
