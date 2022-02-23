@@ -1,1 +1,70 @@
-#background-video{width:100vw;height:100vh;-o-object-fit:cover;object-fit:cover;position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1}body{margin:0}.container{--blur: 5px;width:100vw;height:100vh;position:relative;overflow:hidden}.backdrop{position:absolute;width:100%;height:100%;top:0;left:0;z-index:10}@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){.backdrop{-webkit-backdrop-filter:blur(var(--blur));backdrop-filter:blur(var(--blur))}}.element-upfront{position:absolute;top:50%;z-index:101;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}.get-started{text-decoration:none;padding:1.2rem 2rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:2rem auto;font-family:futura-pt, sans-serif;font-weight:600;color:#333;border:3px solid darkblue;font-size:1.3rem;font-style:normal;-webkit-transition:all 250ms ease-in-out;transition:all 250ms ease-in-out}.get-started:hover{-webkit-transform:scale(1.3);transform:scale(1.3)}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+body {
+  margin: 0;
+}
+.container {
+  --blur: 5px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .backdrop {
+    -webkit-backdrop-filter: blur(var(--blur));
+    backdrop-filter: blur(var(--blur));
+  }
+}
+.element-upfront {
+  position: absolute;
+  top: 50%;
+  z-index: 101;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.get-started {
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 2rem auto;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  color: #333;
+  border: 3px solid darkblue;
+  font-size: 1.3rem;
+  font-style: normal;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.get-started:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
