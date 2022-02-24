@@ -1,0 +1,61 @@
+/* Homepage Responsivness */
+
+:root {
+  --darkblue: #151d3b;
+  --red: #d82148;
+  --red2: #dd4a48;
+  --green: #6ebf8b;
+  --green2: #ecb390;
+  --beige: #dadbbd;
+  --beige2: #c0d8c0;
+  --white: #f5eedc;
+  --fire: #fdf482;
+  --purple: #7456d1;
+}
+
+.homepage-btn {
+  text-decoration: none;
+  padding: 2rem 2rem;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  font-family: input-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--fire);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3.5rem;
+  font-size: 2rem;
+  font-style: normal;
+  filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
+}
+
+.homepage-btn:hover {
+  transform: scale(1);
+  color: var(--white);
+  filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
+}
+
+.element-upfront .quote {
+  font-family: input-sans, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--fire);
+  margin-bottom: 3rem;
+  filter: drop-shadow(0.1rem 0.1rem 0.05rem black);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3.5rem;
+  padding: 2rem 2rem;
+}
+
+.element-upfront .quote:hover {
+  transform: scale(1);
+  color: var(--white);
+  filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
+}
