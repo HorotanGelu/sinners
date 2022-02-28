@@ -30,6 +30,27 @@ $purple: #7456d1;
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+#scroll-button {
+  position: fixed;
+  bottom: 2rem;
+  color: $purple;
+  right: 2rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  text-decoration: none;
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+
+#scroll-button:hover {
+  transform: scale(1.5);
 }
 
 .container {
@@ -119,7 +140,8 @@ body {
   width: 100%;
 }
 
-#nav-btn {
+.nav-btn,
+.logo-btn {
   font-family: apparat, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -129,16 +151,19 @@ body {
   padding: 2rem 2rem;
   transition: all 200ms ease-in-out;
 }
+.nav-btn {
+  position: relative;
+  a {
+  }
+}
 
-#nav-btn:hover {
+.nav-btn:hover {
   border-bottom: 0.6rem solid $purple;
-  transform: scale(1.1);
   font-family: apparat, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 3rem;
   color: $darkblue;
-  padding: 2rem 2rem;
   background-color: $white;
 }
 
@@ -150,6 +175,15 @@ ul.list {
   padding: 2rem 2rem;
   align-items: center;
 }
-#logo {
-  display: flex;
+
+li.logo,
+li.last {
+  margin-right: auto;
+}
+li.logo a {
+  color: $white;
+}
+
+li.logo a:hover {
+  color: $darkblue;
 }
