@@ -31,6 +31,7 @@ $purple: #7456d1;
 body {
   margin: 0;
   scroll-behavior: smooth;
+  background-color: $white;
 }
 
 #scroll-button {
@@ -42,7 +43,6 @@ body {
   width: 3.5rem;
   text-decoration: none;
   border-radius: 50%;
-  display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,11 +129,6 @@ body {
   filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
 }
 
-body {
-  height: 10000px;
-  background-color: $white;
-}
-
 #navigation {
   position: fixed;
   width: 100%;
@@ -179,6 +174,7 @@ li.last {
 }
 li.logo a {
   color: $white;
+  font-size: 3.5rem;
 }
 
 li.logo a:hover {
