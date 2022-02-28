@@ -13,8 +13,7 @@
   --purple: #7456d1;
 }
 
-#bg-image,
-.backdrop {
+#bg-image {
   background: url("/public/img/tastatic.jpg") no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
