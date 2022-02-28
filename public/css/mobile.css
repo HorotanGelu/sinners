@@ -13,6 +13,13 @@
   --purple: #7456d1;
 }
 
+.backdrop {
+  background: url("/public/img/tastatic.jpg") no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(0.5rem);
+}
+
 .homepage-btn {
   text-decoration: none;
   padding: 2rem 2rem;
@@ -26,9 +33,7 @@
   font-style: normal;
   font-size: 4rem;
   text-align: center;
-  color: var(--fire);
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3.5rem;
+  color: var(--purple);
   font-size: 2rem;
   font-style: normal;
   filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
@@ -37,7 +42,6 @@
 .homepage-btn:hover {
   transform: scale(1);
   color: var(--white);
-  filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
 }
 
 .element-upfront .quote {
@@ -46,16 +50,12 @@
   font-style: italic;
   font-size: 2.5rem;
   text-align: center;
-  color: var(--fire);
   margin-bottom: 3rem;
   filter: drop-shadow(0.1rem 0.1rem 0.05rem black);
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3.5rem;
   padding: 2rem 2rem;
 }
 
 .element-upfront .quote:hover {
   transform: scale(1);
   color: var(--white);
-  filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
 }

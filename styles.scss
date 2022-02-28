@@ -54,7 +54,7 @@ body {
 }
 
 .container {
-  --blur: 0.35rem;
+  --blur: 0.5rem;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -95,8 +95,8 @@ body {
   font-style: normal;
   font-size: 4rem;
   text-align: center;
-  color: $fire;
-  background: rgba(0, 0, 0, 0.2);
+  color: $purple;
+  background: rgba(0, 0, 0, 0.35);
   border-radius: 3.5rem;
   font-size: 2rem;
   font-style: normal;
@@ -115,12 +115,11 @@ body {
   font-style: italic;
   font-size: 2.5rem;
   text-align: center;
-  color: $fire;
+  color: $beige2;
   margin-bottom: 3rem;
   transition: all 250ms ease-in-out;
   filter: drop-shadow(0.1rem 0.1rem 0.05rem black);
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3.5rem;
+
   padding: 2rem 2rem;
 }
 
