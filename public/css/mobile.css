@@ -80,3 +80,7 @@ ul.list {
   color: var(--white);
   border-bottom: none;
 }
+
+#navigation {
+  position: absolute;
+}
