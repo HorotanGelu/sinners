@@ -109,7 +109,7 @@ ul.list {
 .article-case {
   flex-direction: column;
   width: fit-content;
-  align-items: baseline;
+  justify-content: center;
 }
 
 .article-title {
