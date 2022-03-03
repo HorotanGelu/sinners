@@ -182,7 +182,7 @@ li.logo a:hover {
 }
 
 .case {
-  background: url("/public/img/players.jpg") no-repeat center center/cover;
+  background: url(".img/players.jpg") no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -221,69 +221,18 @@ li.logo a:hover {
 
 .article-case {
   width: 90%;
-  margin: 3rem auto;
+  margin: 0 auto;
   height: 170rem;
-  background: #101a27;
-  display: flex;
+  background: wheat;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 0.3fr));
+  grid-gap: 2rem;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  h3.section-title {
-    font-family: apparat, sans-serif;
-    font-weight: 500;
-    font-size: 5.2rem;
-    font-style: normal;
-    width: 100%;
-    align-self: self-end;
-    color: $white;
-    background: $red;
-    padding: 1rem 9.2rem;
+}
 
-    span {
-      font-family: apparat, sans-serif;
-      font-weight: 500;
-      font-size: 4rem;
-      font-style: normal;
-    }
-  }
-
-  .article {
-    margin: 2rem;
-    // background: $purple;
-    width: 45%;
-    display: flex;
-    // height: 22rem;
-    align-items: center;
-    justify-content: center;
-
-    .article-title {
-      font-family: apparat, sans-serif;
-      font-weight: 510;
-      font-size: 3rem;
-      font-style: normal;
-      padding: 0 2.5rem;
-      line-height: 7rem;
-      color: $white;
-    }
-    .article-description {
-      font-family: apparat, sans-serif;
-      font-weight: 450;
-      font-size: 2rem;
-      font-style: normal;
-      padding: 0rem 2.5rem;
-      line-height: 2.5rem;
-      color: $white;
-    }
-    .article-image {
-      width: 40rem;
-      border-radius: 0.5rem;
-      transition: all 200ms ease-in-out;
-    }
-    .article-image:hover {
-      transform: scale(1.05);
-      border-top: 1rem solid $red2;
-      writing-mode: horizontal-tb;
-      direction: rtl;
-    }
-  }
+.card {
+  overflow: hidden;
+  border: 1px solid $red2;
+  box-shadow: 4px 4px #151d3b;
 }

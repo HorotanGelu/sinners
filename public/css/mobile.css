@@ -105,18 +105,3 @@ ul.list {
   background-color: var(--white);
   transform: scale(1);
 }
-
-.article-case {
-  flex-direction: column;
-  width: fit-content;
-  justify-content: center;
-}
-
-.article-title {
-  justify-content: flex-end;
-}
-
-.article-description {
-  align-items: flex-end;
-  width: fit-content;
-}
