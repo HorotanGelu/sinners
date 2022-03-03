@@ -182,7 +182,7 @@ li.logo a:hover {
 }
 
 .case {
-  background: url(".img/players.jpg") no-repeat center center/cover;
+  background: url("../img/players.jpg") no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -222,17 +222,11 @@ li.logo a:hover {
 .article-case {
   width: 90%;
   margin: 0 auto;
-  height: 170rem;
+  height: 1700rem;
   background: wheat;
   padding: 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 0.3fr));
   grid-gap: 2rem;
   justify-content: center;
-}
-
-.card {
-  overflow: hidden;
-  border: 1px solid $red2;
-  box-shadow: 4px 4px #151d3b;
 }
