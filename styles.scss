@@ -30,13 +30,13 @@ $purple: #7456d1;
 
 body {
   scroll-behavior: smooth;
-  background: $red;
+  background: $red2;
 }
 
 #scroll-button {
   position: fixed;
   bottom: 2rem;
-  color: $purple;
+  color: $darkblue;
   right: 2rem;
   height: 3.5rem;
   width: 3.5rem;
@@ -232,7 +232,7 @@ li.logo a:hover {
 
   .card {
     overflow: hidden;
-    border: 1rem solid $purple;
+    border: 1rem solid $red2;
     // box-shadow: 4px 4px $white;
     display: flex;
     flex-direction: column;
