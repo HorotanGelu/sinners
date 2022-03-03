@@ -222,11 +222,86 @@ li.logo a:hover {
 .article-case {
   width: 90%;
   margin: 0 auto;
-  height: 1700rem;
-  background: wheat;
+  height: 130rem;
+  background: $darkblue;
   padding: 2rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 0.3fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(3, minmax(16rem, 0.3fr));
+  grid-gap: 5rem;
   justify-content: center;
+
+  .card {
+    overflow: hidden;
+    border: 1rem solid $purple;
+    // box-shadow: 4px 4px $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    text-align: center;
+    background: $red2;
+
+    &__image {
+      height: 28rem;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__title {
+      font-family: apparat, sans-serif;
+      font-weight: bold;
+      font-size: 3rem;
+      padding: 2rem;
+      color: $darkblue;
+    }
+
+    &__description {
+      font-family: apparat, sans-serif;
+      font-weight: normal;
+      font-size: 2.5rem;
+      padding: 0 1rem;
+      color: $darkblue;
+    }
+
+    &__link {
+      font-family: apparat, sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      text-decoration: none;
+      padding: 1rem;
+      color: $darkblue;
+
+      &::after {
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: relative;
+        left: 0.5rem;
+        color: $darkblue;
+      }
+    }
+
+    &:hover {
+      border: 0.7rem solid $purple;
+      transform: scale(1.03);
+      background: $white;
+
+      // border: 1px solid $white;
+      // box-shadow: 8px 8px $white;
+    }
+
+    &:hover &__link::after {
+      animation: arrow 1s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    left: 0.5rem;
+  }
+  100% {
+    left: 1.5rem;
+  }
 }
