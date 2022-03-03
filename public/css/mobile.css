@@ -14,7 +14,7 @@
 }
 
 #bg-image {
-  background: url("../img/players.jpg") no-repeat center center/cover;
+  background: url("../img/tastatic.jpg") no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
   filter: blur(0.5rem);
