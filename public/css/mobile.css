@@ -11,7 +11,20 @@
   --white: #f5eedc;
   --fire: #fdf482;
   --purple: #7456d1;
-  --purple: #18191e;
+  --purple2: #18191e;
+
+  --hovergrd: linear-gradient(
+    109.6deg,
+    rgb(243, 136, 136) 11.2%,
+    rgb(196, 157, 247) 75.1%
+  );
+}
+
+/* Active Class */
+
+li a.active {
+  background: none;
+  color: var(--purple);
 }
 
 #bg-image {
@@ -107,7 +120,7 @@ ul.list {
 
 .article-case {
   width: 100%;
-  height: 340rem;
+  height: 350rem;
   margin: 0 auto;
   padding: 3rem 2rem;
   display: grid;
