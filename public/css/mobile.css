@@ -193,3 +193,53 @@ ul.list {
   font-size: 2rem !important;
   text-align: center;
 }
+
+/* Footer and Contact Details */
+
+.contact {
+  width: 90%;
+  padding: 2rem;
+  margin: 0 auto;
+  height: 30rem;
+  background-color: $primary;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(16rem, 0.3fr));
+  grid-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem dashed #33353f;
+  padding: 5rem;
+  line-height: 4rem;
+  text-align: center;
+  transition: all 250ms ease-in-out;
+}
+
+.contact-details:hover {
+  transform: scale(1);
+}
+
+.icon:hover {
+  transform: scale(1);
+}
+
+#main-footer {
+  width: 90%;
+  margin: 5rem auto;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(16rem, 0.9fr));
+  justify-content: flex-end;
+  text-align: center;
+}
+#main-footer p {
+    font-family: apparat, sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+}

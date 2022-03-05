@@ -357,7 +357,7 @@ li.logo a:hover {
     color: $white;
     border: 0.2rem dashed #33353f;
     padding: 5rem;
-    line-height: 7rem;
+    line-height: 3rem;
     transition: all 250ms ease-in-out;
 
     &:hover {
@@ -368,6 +368,8 @@ li.logo a:hover {
       font-family: apparat, sans-serif;
       font-weight: normal;
       font-size: 2.2rem;
+      padding-top: 2rem;
+      text-align: center;
     }
 
     .icon {
