@@ -1,4 +1,4 @@
-$darkblue: #151d3b;
+$primary: #18191e;
 $red: #d82148;
 $red2: #dd4a48;
 $green: #6ebf8b;
@@ -8,6 +8,11 @@ $beige2: #c0d8c0;
 $white: #f5eedc;
 $fire: #fdf482;
 $purple: #7456d1;
+$hovergrd: linear-gradient(
+  109.6deg,
+  rgb(243, 136, 136) 11.2%,
+  rgb(196, 157, 247) 75.1%
+);
 
 * {
   font-size: 10px;
@@ -30,13 +35,13 @@ $purple: #7456d1;
 
 body {
   scroll-behavior: smooth;
-  background: $red2;
+  background: $primary;
 }
 
 #scroll-button {
   position: fixed;
   bottom: 2rem;
-  color: $darkblue;
+  color: $white;
   right: 2rem;
   height: 3.5rem;
   width: 3.5rem;
@@ -139,29 +144,25 @@ body {
   font-family: apparat, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.2rem;
   text-decoration: none;
-  color: $darkblue;
+  color: $white;
   padding: 2rem 2rem;
   transition: all 200ms ease-in-out;
 }
+
 .nav-btn {
   position: relative;
 }
 
 .nav-btn:hover {
-  border-bottom: 0.6rem solid $purple;
-  font-family: apparat, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 3rem;
-  color: $darkblue;
-  background-color: $white;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-image: $hovergrd 1;
 }
-
 ul.list {
   list-style: none;
-  background-color: $red2;
+  background-color: $primary;
   display: flex;
   justify-content: center;
   padding: 2rem 2rem;
@@ -174,11 +175,11 @@ li.last {
 }
 li.logo a {
   color: $white;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 li.logo a:hover {
-  color: $darkblue;
+  color: $red2;
 }
 
 .case {
@@ -191,22 +192,22 @@ li.logo a:hover {
   justify-content: center;
   align-items: flex-start;
   .btn {
-    background-color: $red2;
+    background-color: $primary;
     color: $white;
     text-decoration: none;
     font-family: apparat, sans-serif;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding: 1.5rem 1.5rem;
     font-style: normal;
-    margin-left: 55rem;
+    margin-left: 57rem;
     transition: all 200ms ease-in-out;
   }
   .btn:hover {
-    border-bottom: 0.3rem solid $purple;
-    color: $darkblue;
-    background-color: $white;
-    transform: scale(1.1);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-image: $hovergrd 1;
+    transform: scale(1.05);
   }
   h1 {
     font-family: apparat, sans-serif;
@@ -222,17 +223,35 @@ li.logo a:hover {
 .article-case {
   width: 90%;
   margin: 0 auto;
-  height: 170rem;
-  background: $darkblue;
+  height: 150rem;
+  background: $primary;
   padding: 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(16rem, 0.3fr));
   grid-gap: 5rem;
   justify-content: center;
 
+  #news-title {
+    grid-column: 1 / -1;
+    font-family: apparat, sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    color: $white;
+    padding: 2rem 0;
+  }
+
+  #bottom-quote {
+    grid-column: 1 / -1;
+    font-family: apparat, sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: $white;
+    padding: 2rem 0;
+  }
+
   .card {
     overflow: hidden;
-    border: 1rem solid $red2;
+    border: 0.6rem solid $white;
     // box-shadow: 4px 4px $white;
     display: flex;
     flex-direction: column;
@@ -240,7 +259,7 @@ li.logo a:hover {
     cursor: pointer;
     transition: all 200ms ease-in-out;
     text-align: center;
-    background: $red2;
+    background: $white;
 
     &__image {
       height: 28rem;
@@ -251,26 +270,26 @@ li.logo a:hover {
     &__title {
       font-family: apparat, sans-serif;
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding: 2rem;
-      color: $darkblue;
+      color: $primary;
     }
 
     &__description {
       font-family: apparat, sans-serif;
       font-weight: normal;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       padding: 0 1rem;
-      color: $darkblue;
+      color: $primary;
     }
 
     &__link {
       font-family: apparat, sans-serif;
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 2.2rem;
       text-decoration: none;
       padding: 1rem;
-      color: $darkblue;
+      color: $primary;
 
       &::after {
         content: "\f061";
@@ -278,14 +297,15 @@ li.logo a:hover {
         font-weight: 900;
         position: relative;
         left: 0.5rem;
-        color: $darkblue;
+        color: $primary;
       }
     }
 
     &:hover {
-      border: 0.7rem solid $purple;
+      border: none;
       transform: scale(1.03);
-      background: $white;
+      background: $hovergrd;
+      color: $primary;
 
       // border: 1px solid $white;
       // box-shadow: 8px 8px $white;
