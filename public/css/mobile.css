@@ -198,13 +198,11 @@ ul.list {
 
 .contact {
   grid-template-columns: repeat(1, minmax(16rem, 0.3fr));
-
 }
 
 .contact-details p {
   font-size: 1.6rem;
 }
-
 
 .contact-details:hover {
   transform: scale(1);
@@ -212,13 +210,17 @@ ul.list {
 
 .contact .contact-details .icon {
   transform: scale(1);
-
 }
 
-
 #main-footer p {
+  font-size: 1.6rem;
+}
 
-    font-size: 1.6rem;
-    
-  }
+.roster-box {
+  height: 250rem;
+  width: 100%;
+}
+
+.roster-box .roster-players {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }

@@ -147,6 +147,10 @@ body {
   z-index: 10;
 }
 
+#nowrapping {
+  white-space: nowrap;
+}
+
 .nav-btn,
 .logo-btn {
   font-family: apparat, sans-serif;
@@ -488,4 +492,28 @@ li.logo a:hover {
 .roster-players .player:hover .roster-bottom {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* Roster Responsivness */
+@media screen and(max-width: 1430px) {
+  .roster-box {
+    .roster-players {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}
+@media screen and(max-width: 1138px) {
+  .roster-box {
+    .roster-players {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+@media screen and(max-width: 856px) {
+  .roster-box {
+    margin: 30rem 0;
+    .roster-players {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
 }
