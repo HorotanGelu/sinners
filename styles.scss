@@ -1,4 +1,5 @@
 $primary: #18191e;
+$lighter: #2c2e38;
 $red: #d82148;
 $red2: #dd4a48;
 $green: #6ebf8b;
@@ -410,6 +411,194 @@ li.logo a:hover {
   }
 }
 
+// Roster Gallery
+
+@media screen and(max-width: 1138px) {
+  .gallery {
+    background: blue;
+    grid-template-columns: repeat(1, 0.8fr);
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 0.8fr);
+  grid-gap: 5rem;
+  // background: $red2;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 5rem;
+  justify-content: center;
+
+  #image-info {
+    font-family: apparat, sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 3rem;
+    border: 0.1rem solid $primary;
+    padding: 1.5rem;
+  }
+
+  // Image1
+
+  .image1 {
+    background: url("../img/roster-gallery/image1.jpg") center center/cover;
+    border: 0.2rem solid $lighter;
+
+    .image1-backside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hovergrd;
+      opacity: 0;
+      text-align: center;
+
+      transition: all 1s ease-in-out;
+    }
+  }
+  .image1:hover .image1-backside {
+    letter-spacing: 2.5rem;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+  }
+
+  .image1:hover {
+    transform: scale(1.03);
+    transition: all 1s ease-in-out;
+  }
+
+  // IMAGE 2
+  .image2 {
+    background: url("../img/roster-gallery/image2.jpg") center center/cover;
+    border: 0.2rem solid $lighter;
+
+    .image2-backside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hovergrd;
+      opacity: 0;
+
+      transition: all 1s ease-in-out;
+    }
+  }
+  .image2:hover .image2-backside {
+    letter-spacing: 2.5rem;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+  }
+
+  .image2:hover {
+    transform: scale(1.03);
+    transition: all 1s ease-in-out;
+  }
+  .image3 {
+    background: url("../img/roster-gallery/image3.jpg") center center/cover;
+    border: 0.2rem solid $lighter;
+
+    .image3-backside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hovergrd;
+      opacity: 0;
+
+      transition: all 1s ease-in-out;
+    }
+  }
+  .image3:hover .image3-backside {
+    letter-spacing: 2.5rem;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+  }
+
+  .image3:hover {
+    transform: scale(1.03);
+    transition: all 1s ease-in-out;
+  }
+  .image4 {
+    background: url("../img/roster-gallery/image4.jpg") center center/cover;
+    border: 0.2rem solid $lighter;
+
+    .image4-backside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hovergrd;
+      opacity: 0;
+
+      transition: all 1s ease-in-out;
+    }
+  }
+  .image4:hover .image4-backside {
+    letter-spacing: 2.5rem;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+  }
+
+  .image4:hover {
+    transform: scale(1.03);
+    transition: all 1s ease-in-out;
+  }
+  .image5 {
+    background: url("../img/roster-gallery/image5.jpg") center center/cover;
+    border: 0.2rem solid $lighter;
+
+    .image5-backside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hovergrd;
+      opacity: 0;
+
+      transition: all 1s ease-in-out;
+    }
+  }
+  .image5:hover .image5-backside {
+    letter-spacing: 2.5rem;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+  }
+
+  .image5:hover {
+    transform: scale(1.03);
+    transition: all 1s ease-in-out;
+  }
+  .image6 {
+    background: url("../img/roster-gallery/image6.jpg") center center/cover;
+    border: 0.2rem solid $lighter;
+
+    .image6-backside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hovergrd;
+      opacity: 0;
+
+      transition: all 1s ease-in-out;
+    }
+  }
+  .image6:hover .image6-backside {
+    letter-spacing: 2.5rem;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+  }
+
+  .image6:hover {
+    transform: scale(1.03);
+    transition: all 1s ease-in-out;
+  }
+
+  .photo-area {
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+    // background: darkblue;
+  }
+}
+
 // Roster Cards
 
 .roster-box {
@@ -420,6 +609,8 @@ li.logo a:hover {
   height: 75rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
   .roster-players {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -657,4 +848,23 @@ li.logo a:hover {
       transform: scale(1.05);
     }
   }
+}
+
+#composition-title {
+  font-family: apparat, sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: $white;
+  letter-spacing: 2.5rem;
+  text-align: right;
+  justify-content: center;
+  margin: 0 auto;
+  flex: 1 0 100%;
+  transition: all 1s ease-in-out;
+}
+#composition-title:hover {
+  color: $red2;
+  transform: translateY(10rem);
+  font-style: italic;
+  transition: all 1s ease-in-out;
 }
