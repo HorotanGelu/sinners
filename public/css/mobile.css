@@ -218,6 +218,7 @@ ul.list {
 
 .roster-box {
   width: 100%;
+  flex-direction: column;
 }
 
 .roster-box .roster-players {
@@ -227,4 +228,27 @@ ul.list {
 .d2map {
   width: 20rem;
   height: 20rem;
+}
+
+.tournaments .graphics {
+  width: 100%;
+}
+
+#composition-title {
+  font-size: 2.2rem;
+}
+.gallery #image-info {
+  font-size: 2.2rem;
+  word-break: break-all;
+}
+
+.tournaments .graphics .content .bar-title .title {
+  font-size: 1.4rem;
+}
+
+.tournaments .graphics .content .tube-empty .primary-details {
+  font-size: 1.4rem;
+}
+.tournaments .graphics .content .tube-empty .details {
+  font-size: 1.4rem;
 }
