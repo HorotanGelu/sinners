@@ -217,10 +217,14 @@ ul.list {
 }
 
 .roster-box {
-  height: 250rem;
   width: 100%;
 }
 
 .roster-box .roster-players {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.d2map {
+  width: 20rem;
+  height: 20rem;
 }
